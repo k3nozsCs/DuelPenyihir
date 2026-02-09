@@ -43,12 +43,15 @@ public class wizard
 
     public void heal()
     {
+        energi += 5;
         if (energi < 100)
         {
-            energi += 5;
+            
+            Console.WriteLine($"{name} Melakukan Heal, Energi Meningkat Menjadi {energi} ");
         }
         else
         {
+            energi = 100;
             Console.WriteLine("Energi Sudah Penuh");
         }
     }
