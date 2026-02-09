@@ -41,5 +41,15 @@ public class wizard
         Console.WriteLine($"Sisa Energi {lawan.name} Adalah {lawan.energi}\n");
     }
 
-
+    public void heal()
+    {
+        if (energi < 100)
+        {
+            energi += 5;
+        }
+        else
+        {
+            Console.WriteLine("Energi Sudah Penuh");
+        }
+    }
 }
